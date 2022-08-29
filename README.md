@@ -17,4 +17,6 @@ Run
 ```
 
 #### Run
-Just `git clone https://github.com/culsonal/stable-diffusion-ui`, then cd into the repo and then run `python stable-ui.py`.
+Just `git clone https://github.com/culsonal/stable-diffusion-ui`, then cd into the repo.
+
+Then run `python stable-ui.py`.
