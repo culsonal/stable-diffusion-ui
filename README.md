@@ -26,4 +26,5 @@ Then run `python stable-ui.py`.
 
 #### Additional notes
 * Currently customized for 4 gb vram which means the text encoder is placed on the CPU (which doesn't affect performance much) and the default width and height is 448x448.
+* Barely uses diffusers or the original stable-diffusion repo so anaconda isn't necessary :)
 * Early stage prototype, lots of fun stuff to improve.
