@@ -23,3 +23,7 @@ Then set the environment variable `SD_AUTH` to your hugginface token that you ge
 Just `git clone https://github.com/culsonal/stable-diffusion-ui`, then cd into the repo.
 
 Then run `python stable-ui.py`.
+
+#### Additional notes
+* Currently customized for 4 gb vram which means the text encoder is placed on the CPU (which doesn't affect performance much) and the default width and height is 448x448.
+* Early stage prototype, lots of fun stuff to improve.
