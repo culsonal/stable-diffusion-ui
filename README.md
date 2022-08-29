@@ -9,7 +9,8 @@ Reads the prompt from `prompt.txt`. Click the image to draw on it. Press `escape
 #### Install
 Run
 ```
-!pip install omegaconf einops pytorch-lightning transformers kornia -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
+!pip install omegaconf einops pytorch-lightning transformers kornia
+!pip install -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
 !pip install -e git+https://github.com/openai/CLIP.git@main#egg=clip
 !pip install -U git+https://github.com/huggingface/diffusers.git
 !pip install taichi
