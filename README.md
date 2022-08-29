@@ -1,2 +1,18 @@
-# stable-diffusion-ui
-Prototyping UIs for stable diffusion
+# Stable diffusion UI
+
+Rapid feedback stable diffusion UI.
+
+![coolll](https://user-images.githubusercontent.com/112416131/187251967-3e65e38e-b5fb-4f46-a194-0e2b0900a381.gif)
+
+Reads the prompt from `prompt.txt`. Click the image to draw on it. Press `escape` to apply text2image from your prompt. Press `space` to apply im2im on the current image. Press `enter` to activate your camera and load a frame into the image: fun in combination with im2im. (Only the first line of the prompt file is used to make it convenient to swap in and out useful prompts.)
+
+#### Install
+Run
+```
+!pip install omegaconf einops pytorch-lightning transformers kornia -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers -e git+https://github.com/openai/CLIP.git@main#egg=clip
+!pip install -U git+https://github.com/huggingface/diffusers.git
+!pip install taichi
+```
+
+#### Run
+Just `git clone https://github.com/culsonal/stable-diffusion-ui`, then cd into the repo and then run `python stable-ui.py`.
