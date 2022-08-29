@@ -6,6 +6,7 @@ Rapid feedback stable diffusion UI.
 
 Reads the prompt from `prompt.txt`. Click the image to draw on it. Press `escape` to apply text2image from your prompt. Press `space` to apply im2im on the current image. Press `enter` to activate your camera and load a frame into the image: fun in combination with im2im. (Only the first line of the prompt file is used to make it convenient to swap in and out useful prompts.)
 
+
 #### Install
 Run
 ```
@@ -15,6 +16,8 @@ Run
 !pip install -U git+https://github.com/huggingface/diffusers.git
 !pip install taichi
 ```
+
+Then set the environment variable `SD_AUTH` to your hugginface token that you get from here https://huggingface.co/settings/tokens.
 
 #### Run
 Just `git clone https://github.com/culsonal/stable-diffusion-ui`, then cd into the repo.
