@@ -1,5 +1,5 @@
 
-from diffusers import DDIMScheduler, LMSDiscreteScheduler
+from diffusers import DDIMScheduler, LMSDiscreteScheduler, StableDiffusionPipeline
 from tqdm.auto import tqdm
 import numpy as np
 import torch, cv2
