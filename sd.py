@@ -10,6 +10,8 @@ def get_models():
   pipe = StableDiffusionPipeline.from_pretrained("CompVis/stable-diffusion-v1-4",
     revision="fp16", torch_dtype=torch.float16, use_auth_token=os.environ['SD_AUTH'])
   pipe.text_encoder.to('cpu')
+  pipe.unet.to('cuda')
+  pipe.vae.to('cuda')
   return { 'unet': pipe.unet, 'vae': pipe.vae, 'text_encoder': pipe.text_encoder, 'tokenizer': pipe.tokenizer }
 
 @torch.autocast('cuda')
